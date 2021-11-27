@@ -11,15 +11,19 @@ PHP Code injection
 # Vulnerability Description:
 
 line 183 in install/index.php
+
 ![](https://github.com/imkitsch/CVE/blob/main/ucms/20211127171241.png)
 
 and write to inc/config.php
+
 ![](https://github.com/imkitsch/CVE/blob/main/ucms/20211127171827.png)
 
 poc:
+
 ![](https://github.com/imkitsch/CVE/blob/main/ucms/20211127172003.png)
 
 Injection php code to inc/config.php
+
 ![](https://github.com/imkitsch/CVE/blob/main/ucms/20211127172132.png)
 
 access index.php to get the phpinfo page
