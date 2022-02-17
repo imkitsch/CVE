@@ -12,9 +12,11 @@ in `ask/add.php` line 91
 in `inc/stopsqlin.php`
 
 ![](https://github.com/imkitsch/CVE/blob/main/zzcms/20220217224927.png)
+
 function `zc_check` filters `$_GET` and `$_POST`,but it won't affect our injection
 
 ![](https://github.com/imkitsch/CVE/blob/main/zzcms/20220217223618.png)
+
 then executes `@extract($_POST);@extract($_GET);`,so we can use the `extract` function to override `$_SESSION["bigclassid"]`
 
 # Poc
